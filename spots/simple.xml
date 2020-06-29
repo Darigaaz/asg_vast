@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+  <Ad id="601364">
+    <InLine>
+      <AdSystem>Acudeo Compatible</AdSystem>
+      <AdTitle>VAST 2.0 Instream Test 1</AdTitle>
+      <Description>VAST 2.0 Instream Test 1</Description>
+      <Error>//example.com/error</Error>
+      <Impression>//example.com/impression</Impression>
+      <Creatives>
+        <Creative AdID="601364">
+          <Linear>
+            <Duration>00:00:05</Duration>
+            <TrackingEvents>
+              <Tracking event="creativeView">//example.com/creativeView</Tracking>
+              <Tracking event="start">//example.com/start</Tracking>
+              <Tracking event="midpoint">//example.com/midpoint</Tracking>
+              <Tracking event="firstQuartile">//example.com/firstQuartile</Tracking>
+              <Tracking event="thirdQuartile">//example.com/thirdQuartile</Tracking>
+              <Tracking event="complete">//example.com/complete</Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>//example.com/click_through</ClickThrough>
+              <ClickTracking>//example.com/click</ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile id="GDFP" delivery="progressive" type="video/mp4" scalable="true" maintainAspectRatio="true"><![CDATA[//commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4]]></MediaFile>
+            </MediaFiles>
+            <!-- <Icons>
+              <Icon program="MOL_HTML" width="100px" height="40px" xPosition="left" yPosition="top" pxratio="1">
+                <HTMLResource><![CDATA[<a class="" href="https://www.adspyglass.com/welcome" target="_blank">Ads by AdSpyglass</a>]]></HTMLResource>
+                <IconClicks>
+                  <IconClickThrough>https://test.example.com/start-wrapper/icons/html/blue/iconClickThrough</IconClickThrough>
+                  <IconClickTracking>https://test.example.com/start-wrapper/icons/html/blue/iconClickTracking</IconClickTracking>
+                </IconClicks>
+                <IconViewTracking>https://test.example.com/start-wrapper/icons/html/blue/iconViewTracking</IconViewTracking>
+              </Icon>
+              <Icon program="MOL_STATIC" width="40px" height="40px" xPosition="left" yPosition="bottom" pxratio="1">
+                <StaticResource>/icons/static/instagram.png</StaticResource>
+                <IconClicks>
+                  <IconClickThrough>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickThrough</IconClickThrough>
+                  <IconClickTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickTracking</IconClickTracking>
+                </IconClicks>
+                <IconViewTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconViewTracking</IconViewTracking>
+              </Icon>
+              <Icon program="MOL_STATIC_2" width="40px" height="40px" xPosition="left" yPosition="bottom" pxratio="1">
+                <StaticResource>/icons/static/android.png</StaticResource>
+                <IconClicks>
+                  <IconClickThrough>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickThrough</IconClickThrough>
+                  <IconClickTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickTracking</IconClickTracking>
+                </IconClicks>
+                <IconViewTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconViewTracking</IconViewTracking>
+              </Icon>
+              <Icon program="MOL_STATIC_3" width="40px" height="40px" xPosition="left" yPosition="bottom" pxratio="1">
+                <StaticResource>/icons/static/twitter.png</StaticResource>
+                <IconClicks>
+                  <IconClickThrough>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickThrough</IconClickThrough>
+                  <IconClickTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickTracking</IconClickTracking>
+                </IconClicks>
+                <IconViewTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconViewTracking</IconViewTracking>
+              </Icon>
+            </Icons> -->
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

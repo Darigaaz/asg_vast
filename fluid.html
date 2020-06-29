@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VAST</title>
+    <!--UrlSearchParams polyfill-->
+    <script
+      type="text/javascript"
+      src="/js/url-search-params-polyfill.js"
+    ></script>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css"
+      type="text/css"
+    />
+    <!-- <script src="https://cdn.fluidplayer.com/2.4.6/fluidplayer.js"></script> -->
+    <script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.js"></script>
+
+    <video width="500" id="video-id">
+      <source
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <script>
+      var queryParams = new URLSearchParams(window.location.search);
+      var spotUrl = queryParams.get("spotUrl") || "/spots/simple.xml";
+
+      var myFP = fluidPlayer("video-id", {
+        layoutControls: {
+          //   fillToContainer: false,
+          //   primaryColor: false,
+          //   posterImage: false,
+          // autoPlay: true,
+          //   playButtonShowing: true,
+          //   playPauseAnimation: true,
+          // mute: false,
+          //   logo: {
+          //     imageUrl: null,
+          //     position: 'top left',
+          //     clickUrl: null,
+          //     opacity: 1,
+          //     mouseOverImageUrl: null,
+          //     imageMargin: '2px',
+          //     hideWithControls: false,
+          //     showOverAds: false
+          //   },
+          //   htmlOnPauseBlock: {
+          //     html: null,
+          //     height: null,
+          //     width: null
+          //   },
+          //   allowDownload: false,
+          //   allowTheatre: true,
+          //   playbackRateEnabled: false,
+          //   controlBar: {
+          //     autoHide: false,
+          //     autoHideTimeout: 3,
+          //     animated: true
+          //   },
+        },
+        vastOptions: {
+          maxAllowedVastTagRedirects: 10,
+          // To implement ads see http://docs.fluidplayer.com/ad_configuration/
+          adList: [
+            {
+              roll: "preRoll",
+              vastTag: spotUrl
+              //     vastTag: 'https://syndication.exosrv.com/splash.php?idzone=2842008',
+              // vastTag: 'https://a.o333o.com/api/spots/113651',
+              // vastTag: 'https://a.o333o.com/api/spots/108186',
+              // vastTag: 'http://mtrcss.com/7755263756/v',
+            }
+          ],
+          vastAdvanced: {
+            vastLoadedCallback: function() {
+              console.log("vastLoadedCallback");
+            },
+            noVastVideoCallback: function() {
+              console.log("noVastVideoCallback");
+            },
+            vastVideoSkippedCallback: function() {
+              console.log("vastVideoSkippedCallback");
+            },
+            vastVideoEndedCallback: function() {
+              console.log("vastVideoEndedCallback");
+              myFP.play();
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

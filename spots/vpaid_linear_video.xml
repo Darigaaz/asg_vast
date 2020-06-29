@@ -1,0 +1,61 @@
+<VAST version="3.0">
+  <Ad id="543321">
+    <InLine>
+      <AdSystem>ASG</AdSystem>
+      <AdTitle>VPAID Test 1</AdTitle>
+      <Description>VPAID Test 1</Description>
+      <Impression><![CDATA[/tracking/vpaid/impression]]></Impression>
+      <Creatives>
+        <Creative sequence="1" AdID="12345678">
+          <Linear>
+            <Duration>00:00:05</Duration>
+            <TrackingEvents>
+              <Tracking event="creativeView"><![CDATA[/tracking/vpaid/creativeView]]></Tracking>
+              <Tracking event="start"><![CDATA[/tracking/vpaid/start]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[/tracking/vpaid/firstQuartile]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[/tracking/vpaid/midpoint]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[/tracking/vpaid/thirdQuartile]]></Tracking>
+              <Tracking event="complete"><![CDATA[/tracking/vpaid/complete]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickTracking id="whatever"><![CDATA[/tracking/vpaid/click]]></ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile id="js_VPAID_File" type="application/javascript" width="640" height="480" apiFramework="VPAID">/creatives/vpaid/javascript/linear_video.js</MediaFile>
+            </MediaFiles>
+            <AdParameters>
+              <![CDATA[ {"overlay": "/creatives/smile.jpg", "videos": [{"mimetype":"video/mp4","url":"//commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"}]} ]]>
+            </AdParameters>
+            <Icons>
+              <Icon program="MOL_STATIC" width="40px" height="40px" xPosition="left" yPosition="bottom" pxratio="1">
+                <StaticResource>/icons/static/instagram.png</StaticResource>
+                <IconClicks>
+                  <IconClickThrough>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickThrough</IconClickThrough>
+                  <IconClickTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickTracking</IconClickTracking>
+                </IconClicks>
+                <IconViewTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconViewTracking</IconViewTracking>
+              </Icon>
+              <Icon program="MOL_STATIC_2" width="40px" height="40px" xPosition="left" yPosition="bottom" pxratio="1">
+                <StaticResource>/icons/static/android.png</StaticResource>
+                <IconClicks>
+                  <IconClickThrough>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickThrough</IconClickThrough>
+                  <IconClickTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickTracking</IconClickTracking>
+                </IconClicks>
+                <IconViewTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconViewTracking</IconViewTracking>
+              </Icon>
+              <Icon program="MOL_STATIC_3" width="40px" height="40px" xPosition="left" yPosition="bottom" pxratio="1">
+                <StaticResource>/icons/static/twitter.png</StaticResource>
+                <IconClicks>
+                  <IconClickThrough>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickThrough</IconClickThrough>
+                  <IconClickTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconClickTracking</IconClickTracking>
+                </IconClicks>
+                <IconViewTracking>https://test.example.com/mid-wrapper/icons/static/instagram/iconViewTracking</IconViewTracking>
+              </Icon>
+          </Icons>
+          </Linear>
+        </Creative>
+      </Creatives>
+
+    </InLine>
+  </Ad>
+</VAST>

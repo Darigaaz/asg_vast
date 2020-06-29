@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+  <Ad id="601000">
+    <Wrapper>
+      <AdSystem version="3.0">AdSpyglass</AdSystem>
+      <VASTAdTagURI><![CDATA[/failed]]></VASTAdTagURI>
+      <Impression>/wrapper_impression</Impression>
+      <Error>/error</Error>
+      <Extensions>
+        <Extension type="asg">
+          <Skipoffset>5</Skipoffset>
+          <ShowsLimit>5</ShowsLimit>
+          <SkipButtonCaption>wrapper Close in [seconds] !!!</SkipButtonCaption>
+          <SkipButtonClickCaption>wrapper Close ad wrapper!!!!</SkipButtonClickCaption>
+          <PauseOnClick>True</PauseOnClick>
+        </Extension>
+      </Extensions>
+    </Wrapper>
+  </Ad>
+  <Ad id="601999">
+    <Wrapper>
+      <AdSystem version="3.0">AdSpyglass</AdSystem>
+      <VASTAdTagURI><![CDATA[/failed]]></VASTAdTagURI>
+      <Impression>/wrapper_impression</Impression>
+      <Error>/error</Error>
+      <Extensions>
+        <Extension type="asg">
+          <Skipoffset>5</Skipoffset>
+          <ShowsLimit>5</ShowsLimit>
+          <SkipButtonCaption>wrapper Close in [seconds] !!!</SkipButtonCaption>
+          <SkipButtonClickCaption>wrapper Close ad wrapper!!!!</SkipButtonClickCaption>
+          <PauseOnClick>True</PauseOnClick>
+        </Extension>
+      </Extensions>
+    </Wrapper>
+  </Ad>
+  <Ad id="601111">
+    <Wrapper>
+      <AdSystem version="3.0">AdSpyglass</AdSystem>
+      <VASTAdTagURI><![CDATA[/go_to_buffet]]></VASTAdTagURI>
+      <Impression>/wrapper_impression</Impression>
+      <Error>/error1</Error>
+      <Extensions>
+        <Extension type="asg">
+          <Skipoffset>5</Skipoffset>
+          <ShowsLimit>5</ShowsLimit>
+          <SkipButtonCaption>wrapper Close in [seconds] !!!</SkipButtonCaption>
+          <SkipButtonClickCaption>wrapper Close ad wrapper!!!!</SkipButtonClickCaption>
+          <PauseOnClick>True</PauseOnClick>
+        </Extension>
+      </Extensions>
+    </Wrapper>
+  </Ad>
+  <Ad id="601222">
+    <Wrapper>
+      <AdSystem version="3.0">AdSpyglass</AdSystem>
+      <VASTAdTagURI><![CDATA[/spots/simple.xml]]></VASTAdTagURI>
+      <Impression>/wrapper_impression</Impression>
+      <Error>/error</Error>
+      <Extensions>
+        <Extension type="asg">
+          <Skipoffset>5</Skipoffset>
+          <ShowsLimit>5</ShowsLimit>
+          <SkipButtonCaption>wrapper Close in [seconds] !!!</SkipButtonCaption>
+          <SkipButtonClickCaption>wrapper Close ad wrapper!!!!</SkipButtonClickCaption>
+          <PauseOnClick>True</PauseOnClick>
+        </Extension>
+      </Extensions>
+    </Wrapper>
+  </Ad>
+  <Ad id="601333">
+    <Wrapper>
+      <AdSystem version="3.0">AdSpyglass</AdSystem>
+      <VASTAdTagURI><![CDATA[/spots/simple.xml]]></VASTAdTagURI>
+      <Impression>/wrapper_impression3</Impression>
+      <Error>/error</Error>
+      <Extensions>
+        <Extension type="asg">
+          <Skipoffset>5</Skipoffset>
+          <ShowsLimit>5</ShowsLimit>
+          <SkipButtonCaption>wrapper Close in [seconds] !!!</SkipButtonCaption>
+          <SkipButtonClickCaption>wrapper Close ad wrapper!!!!</SkipButtonClickCaption>
+          <PauseOnClick>True</PauseOnClick>
+        </Extension>
+      </Extensions>
+    </Wrapper>
+  </Ad>
+</VAST>

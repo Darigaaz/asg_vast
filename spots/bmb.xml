@@ -1,0 +1,44 @@
+<VAST version="3.0">
+    <Ad id="2240" sequence="1">
+        <Wrapper allowMultipleAds="true">
+            <AdSystem>BuyMediaBiz</AdSystem>
+            <VASTAdTagURI>
+                <![CDATA[
+https://covivado.club/vast3/99b3ba1c2bd0cc0964f6c5c8f3d3d623-96786-[random].xml?subid1=1545
+]]>
+            </VASTAdTagURI>
+            <Impression>
+                <![CDATA[
+https://razdvabm.com/impression?key=a1ded3e6-9e59-4bb7-847b-c85b5ef9e33b
+]]>
+            </Impression>
+            <Error>
+                <![CDATA[
+https://razdvabm.com/error?key=a1ded3e6-9e59-4bb7-847b-c85b5ef9e33b
+]]>
+            </Error>
+            <Creatives>
+                <Creative id="2240">
+                    <Linear>
+                        <VideoClicks>
+                            <ClickTracking>
+                                <![CDATA[
+https://razdvabm.com/click?key=a1ded3e6-9e59-4bb7-847b-c85b5ef9e33b
+]]>
+                            </ClickTracking>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </Wrapper>
+    </Ad>
+    <Ad id="2240-2" sequence="2">
+        <Wrapper allowMultipleAds="true">
+            <AdSystem>BuyMediaBiz</AdSystem>
+            <VASTAdTagURI>
+                <![CDATA[ https://prfctmney.com/omega/1623?sequence=1 ]]>
+            </VASTAdTagURI>
+            <Creatives/>
+        </Wrapper>
+    </Ad>
+</VAST>

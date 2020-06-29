@@ -1,0 +1,102 @@
+<html>
+<head>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <title>Video.js Test</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.3/video-js.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.6.5/videojs-contrib-ads.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <a href="/ima.html?spotUrl=https://a.so333o.com/api/spots/3740?v2=1">/ima.html?spotUrl=https://a.so333o.com/api/spots/3740?v2=1</a>
+<video id="content_video" class="video-js vjs-default-skin"
+       controls preload="auto" width="640" height="360">
+  <source src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          type="video/mp4" ></source>
+</video>
+<!--<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>-->
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3_debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.3/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.6.5/videojs-contrib-ads.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.8.0/videojs.ima.js"></script>
+
+<!--UrlSearchParams polyfill-->
+<script type="text/javascript" src="/js/url-search-params-polyfill.js"></script>
+<script type="text/javascript">
+  var queryParams = new URLSearchParams(window.location.search);
+  var spotUrl = queryParams.get("spotUrl");// no CORS =C "https://n57qp.csb.app/spots/simple.xml";
+
+    var adsResponse = spotUrl === '' && `<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+  <Ad id="601364">
+    <InLine>
+      <AdSystem>Acudeo Compatible</AdSystem>
+      <AdTitle>VAST 2.0 Instream Test 1</AdTitle>
+      <Description>VAST 2.0 Instream Test 1</Description>
+      <Error>//example.com/error</Error>
+      <Impression>//example.com/impression</Impression>
+      <Creatives>
+        <Creative AdID="601364">
+          <Linear>
+            <Duration>00:00:05</Duration>
+            <TrackingEvents>
+              <Tracking event="creativeView">//example.com/creativeView</Tracking>
+              <Tracking event="start">//example.com/start</Tracking>
+              <Tracking event="midpoint">//example.com/midpoint</Tracking>
+              <Tracking event="firstQuartile">//example.com/firstQuartile</Tracking>
+              <Tracking event="thirdQuartile">//example.com/thirdQuartile</Tracking>
+              <Tracking event="complete">//example.com/complete</Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>//example.com/click_through</ClickThrough>
+              <ClickTracking>//example.com/click</ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile id="GDFP" delivery="progressive" type="video/mp4" scalable="true" maintainAspectRatio="true"><![CDATA[//commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4]]></MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
+`
+
+  var player = videojs('content_video');
+  var options = {
+    id: 'content_video',
+    [!adsResponse && 'adTagUrl']: spotUrl,
+    [adsResponse && 'adsResponse']: adsResponse,
+    debug: true,
+  };
+
+  player.ima(options);
+
+  // Remove controls from the player on iPad to stop native controls from stealing
+  // our click
+  var contentPlayer =  document.getElementById('content_video_html5_api');
+  if ((navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/Android/i)) &&
+    contentPlayer.hasAttribute('controls')) {
+    contentPlayer.removeAttribute('controls');
+  }
+
+  // Initialize the ad container when the video player is clicked, but only the
+  // first time it's clicked.
+  var initAdDisplayContainer = function() {
+    player.ima.initializeAdDisplayContainer();
+    wrapperDiv.removeEventListener(startEvent, initAdDisplayContainer);
+  }
+
+  var startEvent = 'click';
+  if (navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/Android/i)) {
+    startEvent = 'touchend';
+  }
+
+  var wrapperDiv = document.getElementById('content_video');
+  wrapperDiv.addEventListener(startEvent, initAdDisplayContainer);
+</script>
+</body>
+</html>

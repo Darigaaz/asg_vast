@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <title>Adspyglass videojs-plugin</title>
+    <!-- Load dependent stylesheets. -->
+    <!--    <link rel="stylesheet" href="../node_modules/video.js/dist/video-js.min.css">-->
+    <!--    <link rel="stylesheet" href="../node_modules/videojs-contrib-ads/dist/videojs.ads.css" />-->
+    <!--    <link rel="stylesheet" href="../node_modules/videojs-ima/dist/videojs.ima.css" />-->
+    <!--    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.7.3/video-js.min.css" rel="stylesheet"/>
+    <!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.6.5/videojs-contrib-ads.css" rel="stylesheet"/>-->
+</head>
+
+<body>
+  <!--UrlSearchParams polyfill-->
+  <script type="text/javascript" src="/js/url-search-params-polyfill.js"></script>
+  <!--  <div class="video-ad-container" ></div>-->
+  <!-- data-setup='{"plugins": {"ASGAds": {"q": 1}}}' -->
+  <video width="500px" id='myvideo' class="video-js" controls="controls" data-setup='{}' >
+      <source src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+  </video>
+   <!-- <div id="myvideo">
+    <video width="500" controls>
+      <source
+        src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div> -->
+</div>
+
+<!-- Load dependent scripts -->
+<!--<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>-->
+<!--<script src="https://vjs.zencdn.net/7.7.5/video.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.6.5/videojs-contrib-ads.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.5.0/videojs.ima.js"></script>-->
+
+
+  <script>
+    var queryParams = new URLSearchParams(window.location.search);
+    var spotUrl = queryParams.get("spotUrl") || "/spots/simple.xml";
+
+    var slider = queryParams.get("slider");
+
+    var id = 0;
+
+    window.asgvastcnf = {
+      spotId: 1,
+      spotUrl: spotUrl,
+      // spotUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvpaid2js&correlator=',
+      // spotUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dnonlinearvpaid2js&correlator=',
+      // spotUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dredirectlinear&correlator=',
+      // spotUrl: "//deliver.vkcdnservice.com/api/spots/236452",
+      // getSpotId: function() { return id; },
+      // // spotId: 2,
+      // getSpotUrl: function() {
+      //   if (id++ < 3) {
+      //     return "/empty.xml1?id=" + id;
+      //   }
+      //   id = 0;
+      //   return queryParams.get('spotUrl');
+      // },
+      // getAdTag: function(callback) {
+      //   if (id++ < 3) {
+      //     callback(null, "/dummy?id=" + id)
+      //     return
+      //   }
+      //
+      //   callback(null, queryParams.get('spotUrl') + '?id=' + id)
+      // },
+
+      [!slider && "attachTo"]: "#myvideo",
+      position: 'bottom-right',
+      // autoplay: false,
+      // autoplayDelay: 3,
+
+      // spotUrl: "//api.adultsclips.com/api/spots/173897",
+      // spotUrl: "//a.o333o.com/api/spots/93285",
+      // spotUrl: "/spots/exo.xml",
+      // width: {
+      //   mobile: {
+      //     landscape: '30%',
+      //     portrait: '50%'
+      //   },
+      //   desktop: 250
+      // },
+      // autoplay: false,
+
+
+      // spotUrl: "//a.o333o.com/api/spots/85979",
+      // width: 380,
+      // height: '50%',
+      // height: {
+      //   mobile: 170,
+      //   desktop: '25%'
+      // },
+      // width: {
+      //   mobile: 300,
+      //   desktop: '22%'
+      // },
+
+
+      // width: 420,
+      // height: 250,
+      // withCredentials: true,
+      // withCredentials: false,
+      // disablePreloadAds: true,
+
+      // playAdAlways: true,
+
+      // asgLabel: { enabled: false }
+
+      skipoffset: 3210,
+      // width: "96%",
+      // showTimes: 4,
+      // showsLimit: 2,
+      // refreshRate: 60,
+      // closeAtBottom: true,
+      enableVPAID: true,
+      // enableVPAID: false,
+      afterCallback: function(lastError) { console.log('callback fired', lastError); },
+      // afterCallback: function () {
+      //   var script = document.createElement("script");
+      //   script.src = "https://syndication.exosrv.com/splash.php?idzone=3550135";
+      //   document.head.appendChild(script);
+      // }
+      pauseOnClick: true,
+      skipButtonCaption: 'Close in [seconds] sec',
+      skipButtonClickCaption: 'Close ad',
+      // numAttempts: 15,
+      adCancelTimeout: 2000,
+      // verbosity: -1,
+      // templateConfig: {
+      //   extraOptions: {
+      //     adElement: 'asgvjs-element1',
+      //   }
+      // },
+      // vpaidOptions: {
+      //   adElementQuerySelector: '.asgvjs-element1'
+      // },
+    }
+  </script>
+  <script src="https://cdn.so333o.com/vast2.js""></script>
+<!--<script src="mol-sdk.js"></script>-->
+</body>
+</html>

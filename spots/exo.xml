@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="2535876">
+    <InLine>
+      <AdSystem>ExoClick</AdSystem>
+      <AdTitle/>
+      <Impression id="exotr"><![CDATA[https://main.exosrv.com/vregister.php?a=vimp&tracking_event=impression&idzone=3388727&169a5997e60571b6d97d93173f1e6f0c=tsVuZ8uHLht4dNvDlq4dvXDx66cNdlTlK8E.fnnu4.PG7p13dOetqayWunDM5E_XA3GxK9Yw85n0466oK3F35qq5WJHM6rJ67GXNzU0muBthu1ymuCpynPn08duXDXA3PYzHBU.5Tny8.OHPxrgbqgrcz8c.nLrz1wN4zSuZ8.fjx35d9cDbTFbj01OGfXh41wNtMSTsQPS58uvPr479tcDdrFMDFcE0ufLt168efDhrgbmqz49dcDbNM11TlOfLXA225bA05nw1wNtMU0wOU58NcDcFU.fLzz4ctdVjOfDXaxHY5nw3cOOuexmOCp9ylelitzPvw1z2MxwVPuUrtWU0uStYZonga2mJJ2IHpV2rKaXJWsM0TwNbl7T7Erzi9cy89jMcFT7lOfHW5e0.xK84vXMvK5XdNTFnx1sNr14TuZ8fGt2amRivPXA3K5XdNTFnx1tTWS104LzUwPQSsR5nIn636651713ZqbmKW3G13Zqc9cDc9MzdjVa7TFbj01OGfHtrnpgagleXkmbcjz5a36656s.OupqlxyVelyqaOyuCaXPXZU5SvA3n1c8dWenZzv35dfHXdz5d.fnl46c._Hl068.vbhrspjXfYqfzY4defXow708cmOPRvn1ad4c._XkzxY88HOnnXBJPS5VVBNKvVWxXZVnx1wST0uVVQTSrwS2sRwNr0uMVTS58NdLjrlLlK9UFbi781VcrEjmdVk9djLm5qaTWw2zHM1Fnw1wNzOuuU59Ovnr11wNxsStwSvLzsPOZ.OXnp31uXuNWVwTSr1wSOZ8N3DtrgbbYrYaclrcpz5a4G2mKaYHKV6prKWnM.GuWapqmCevPhrglamelgrmXkmbcz4a63Kq15Jm3M.Gulx6CaVd5yaViRxeBvPry6ePPTXPTNfgvVWxXZVnt464G52Ka5XKc.GtqCvBd5yaViRxeBvPry6eeHHXK5Ww1ZBXgvPTNfgvXhO5nrlcrYasgrwXnpmvwXbcqapgnrgmlz1sNsxzNRL2uU564JJ6XKqoJpV2I414JbWI4G16XGKppas.Guqxnlnw11WM88.GupqmCetevCdzPXU1TBPWvKxI5nrqapgnrXtcpz1s0zXVOUr2uU5.OGu2nPhrglrcplYjz4a7bLIG8.PXx18cuXHlw48uHTp06devfq546s.WPHR1rj311wSOVVsST58evjr45cuPLhA--]]></Impression>
+      <Error><![CDATA[https://main.exosrv.com/vregister.php?a=vview&errorcode=[ERRORCODE]&idzone=3388727&dg=2535876-26551300-2-0-0-InLine]]></Error>
+      <Creatives>
+        <Creative sequence="1" id="26551300">
+          <Linear>
+            <Duration>00:00:00.000</Duration>
+            <TrackingEvents>
+              <Tracking id="prog_1" event="progress" offset="00:00:10.000"><![CDATA[https://main.exosrv.com/vregister.php?a=vview&tracking_event=progress&progress=00:00:10.000&idzone=3388727&169a5997e60571b6d97d93173f1e6f0c=tsVuZ8uHLht4dNvDlq4dvXDx66cNdlTlK8E.fnnu4.PG7p13dOetqayWunDM5E_XA3GxK9Yw85n0466oK3F35qq5WJHM6rJ67GXNzU0muBthu1ymuCpynPn08duXDXA3PYzHBU.5Tny8.OHPxrgbqgrcz8c.nLrz1wN4zSuZ8.fjx35d9cDbTFbj01OGfXh41wNtMSTsQPS58uvPr479tcDdrFMDFcE0ufLt168efDhrgbmqz49dcDbNM11TlOfLXA225bA05nw1wNtMU0wOU58NcDcFU.fLzz4ctdVjOfDXaxHY5nw3cOOuexmOCp9ylelitzPvw1z2MxwVPuUrtWU0uStYZonga2mJJ2IHpV2rKaXJWsM0TwNbl7T7Erzi9cy89jMcFT7lOfHW5e0.xK84vXMvK5XdNTFnx1sNr14TuZ8fGt2amRivPXA3K5XdNTFnx1tTWS104LzUwPQSsR5nIn636651713ZqbmKW3G13Zqc9cDc9MzdjVa7TFbj01OGfHtrnpgagleXkmbcjz5a36656s.OupqlxyVelyqaOyuCaXPXZU5SvA3n1c8dWenZzv35dfHXdz5d.fnl46c._Hl068.vbhrspjXfYqfzY4defXow708cmOPRvn1ad4c._XkzxY88HOnnXBJPS5VVBNKvVWxXZVnx1wST0uVVQTSrwS2sRwNr0uMVTS58NdLjrlLlK9UFbi781VcrEjmdVk9djLm5qaTWw2zHM1Fnw1wNzOuuU59Ovnr11wNxsStwSvLzsPOZ.OXnp312wNuTLuWuS1563KaZqWpm3M9cDbbFbDTktblOfLXA20xTTA5SvVNZS05nw1yzVNUwT158NcErUz0sFcy8kzbmfDXW5VWvJM25nw10uPQTSrvOTSsSOLwN59eXTx56a56Zr8F6q2K7Ks9vHXA3OxTXK5Tnw1tQV4LvOTSsSOLwN59eXTzw465XK2GrIK8F56Zr8F68J3M9crlbDVkFeC89M1.C7blTVME9cE0uethtmOZqJe1ynPXBJPS5VVBNKuxHGvBLaxHA2vS4xVNLVnw11WM8s.Guqxnnnw11NUwT1r14TuZ66mqYJ615WJHM9dTVME9a9rlOetmma6pyle1ynPxw12058NcEtblMrEefDXbZZA3nx6.Ovjly48uHLhx5ceHjxz89XPHVnyx46O9m.euuCRyqtiSfPj18dfHLlx5cIA--]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough><![CDATA[https://main.exosrv.com/click.php?data=H4sIAAAAAAAAA1VRy27bMBD8FV10Fcjlu7cCQWDAie0msmDkUpii8mpMUiIFp8Z.fGk7ORS7B2J3ZnYGrBAEE1pJpARfc46pZj9ruC1tg3_Z9_tDEk0fDmWQp33_p2a3fc1upKLC6Bpkmu2bK4MQnHtYrKxdtN2i_cVf_84h5Jx8cptd160e7pYSBnn4PI3R7rantXerrezIFHct2z6e5tHHPEfXbVp3d18Wp7h7nD_cUj5dMOuR5ZHEiaXkxzy.B5_C7HMM6eDjGMbpo5fdZ_t2_9wOm.1G.fWZ29E0nXVu1LdVKF4Z01qB.v0dHZEgUqGFBqBAMM3Fih3OsdGwhmrdcNFwhghSCMoIwS8JFEQjcopQ.EWl6CAthWLQwnI5KAVFt2GgmAHNmaLAy1VJEAwjcEb_f48gF0YI1GC4wuryJT.q4_FYfaGqgqquvGsJ4Nrw68MQeklDJV52.goBXC9Rc2IsGYywe6YscEodEYN0jJREz8b.A0YES2kLAgAA]]></ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4"><![CDATA[https://static.exosrv.com/library/348620/67f4d58d558f73376fac3618f01b20657abf12a5.mp4]]></MediaFile>
+            </MediaFiles>
+            <Icons>
+              <Icon>
+                <IconClicks>
+                  <IconClickThrough>bongacams5.com</IconClickThrough>
+                </IconClicks>
+              </Icon>
+            </Icons>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

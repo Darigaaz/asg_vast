@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="https://buymedia.biz/xsd/vast3.xsd">
+  <Ad id="2791">
+    <InLine>
+      <AdSystem>BuyMediaBiz</AdSystem>
+      <AdTitle>https://buymedia.biz - 2791</AdTitle>
+      <Impression><![CDATA[https://razdvabm.com/impression?key=d8a87ec2-ed29-4505-a173-b52fc10b92fe]]></Impression>
+      <Error><![CDATA[https://razdvabm.com/error?key=d8a87ec2-ed29-4505-a173-b52fc10b92fe]]></Error>
+      <Creatives>
+        <Creative id="2791">
+          <Linear skipoffset="50%">
+           <Duration>16</Duration>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[/start]]></Tracking>
+              <Tracking event="progress" offset="00:00:02.000"><![CDATA[/progress]]></Tracking>
+              <Tracking event="complete"><![CDATA[/complete]]></Tracking>
+              <Tracking event="skip"><![CDATA[/skip]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough><![CDATA[http://razdvabm.com/redirect?key=d8a87ec2-ed29-4505-a173-b52fc10b92fe]]></ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="960"
+                         height="540" scalable="true" maintainAspectRatio="true"><![CDATA[https://cdn-e01.cdnbmb.com/1/960-gQkfbPI0PA1bJ1qGZpAQaD6AX.mp4?cdn_hash=53097e01975fa27a6dabb5238bcb0c5e&cdn_net=178.140.0.78]]>
+              </MediaFile>                        </MediaFiles>
+
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

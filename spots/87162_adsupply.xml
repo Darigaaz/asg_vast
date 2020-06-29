@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+    <Ad id="90530">
+        <Wrapper>
+            <AdSystem version="3.0">AdSpyglass</AdSystem>
+            <VASTAdTagURI><![CDATA[https://engine.spotscenered.info/preroll.engine?id=d06114d1-e10e-43b4-893b-6938e5cf9825&zid=49918&cvs={ClientVideoSupport}&time={TimeOffset}&stdtime={StdTimeOffset}&abr={IsAdblockRequest}&pageurl={PageUrl}&tid={TrackingId}&res={Resolution}&bw={BrowserWidth}&bh={BrowserHeight}&kw={Keywords}&referrerUrl={ReferrerUrl}&pw={PlayerWidth}&ph={PlayerHeight}]]></VASTAdTagURI>
+            <Impression>//a.o333o.com/api/click/1118322121965750062</Impression>
+        </Wrapper>
+    </Ad>
+</VAST>

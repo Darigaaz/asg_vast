@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="bm-site-verification"
+      content="1nxt2dDwJ9noFuhwIHRjvaOwUuivW4f0xqtrtd3S"
+    />
+    <title>VAST</title>
+    <!--UrlSearchParams polyfill-->
+    <script
+      type="text/javascript"
+      src="/js/url-search-params-polyfill.js"
+    ></script>
+  </head>
+  <body>
+    <div style="height: 3000px;">
+      <div style="height: 200px;">
+        <video width="500" id="myvideo" controls>
+          <source
+            src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            type="video/mp4"
+          />
+          <!--  <source src="http://adscripts.172.20.32.39.nip.io:9000/media/small.mp4" type="video/mp4">-->
+        </video>
+      </div>
+    </div>
+
+    <script>
+      var queryParams = new URLSearchParams(window.location.search);
+      var spotUrl = queryParams.get("spotUrl") || "/spots/simple.xml";
+      var id = 0;
+      var slider = queryParams.get("slider");
+
+      window.asgvastcnf_overlay = {
+        spotUrl: spotUrl,
+        // getSpotUrl: function() {
+        //   if (id++ < 9) {
+        //     return "//nonexistent/getSpotUrl/dummy?id=" + id;
+        //   }
+        //   return spotUrl;
+        // },
+        // getAdTag: function(cb) {
+        //   if (id < 5) {
+        //     setTimeout(function() {
+        //       cb(null, "//nonexistent/getAdTag/dummy?id=" + id++);
+        //     }, 1000);
+        //   } else if (id < 7) {
+        //     id++;
+        //     cb(null, spotUrl);
+        //   } else {
+        //     cb(null, "/spots/simple.xml");
+        //   }
+        //   //   callback(null, spotUrl + "?id=" + id);
+        // },
+        spotId: 1,
+
+        [!slider && "attachTo"]: "#myvideo",
+        position: "bottom-right",
+        // autoplay: true,
+        // autoplayDelay: 5000,
+
+        // spotUrl: "//api.adultsclips.com/api/spots/173897",
+        // spotUrl: "//a.o333o.com/api/spots/93285",
+        // spotUrl: "/spots/exo.xml",
+        // width: {
+        //   mobile: {
+        //     landscape: '30%',
+        //     portrait: '50%'
+        //   },
+        //   desktop: 250
+        // },
+        // autoplay: false,
+
+        // spotUrl: "//a.o333o.com/api/spots/85979",
+        // width: 380,
+        // height: '50%',
+        // height: {
+        //   mobile: 170,
+        //   desktop: '25%'
+        // },
+        // width: {
+        //   mobile: 300,
+        //   desktop: '22%'
+        // },
+
+        // width: 420,
+        // height: 250,
+        // withCredentials: true,
+        // withCredentials: false,
+        // disablePreloadAds: true,
+
+        // playAdAlways: true,
+
+        // refreshRate: 60,
+        // showsLimits: 3,
+
+        asgLabel: { enabled: true },
+
+        skipoffset: 3000,
+        // width: "96%",
+        // showTimes: 2,
+        // closeAtBottom: true,
+        // enableVPAID: true,
+        // enableVPAID: false,
+        afterCallback: function(lastError) {
+          // console.log("callback fired", lastError);
+        },
+        // afterCallback: function () {
+        //   var script = document.createElement("script");
+        //   script.src = "https://syndication.exosrv.com/splash.php?idzone=3550135";
+        //   document.head.appendChild(script);
+        // }
+        // pauseOnClick: true,
+        // skipButtonCaption: "Close in [seconds] sec",
+        // skipButtonClickCaption: "Close ad",
+        // adCancelTimeout: 5000,
+        verbosity: 5
+      };
+    </script>
+    <!-- <script type="text/javascript" src="/vast-im.js"></script> -->
+    <!-- <script
+      type="text/javascript"
+      src="https://s.o333o.com/vast-im.js"
+    ></script> -->
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.so333o.com/vast-im.js"
+    ></script>
+    <!--<script type="text/javascript" src="https://cdn.o333o.com/vast-im.js"></script> &lt;!&ndash; prod &ndash;&gt;-->
+  </body>
+</html>

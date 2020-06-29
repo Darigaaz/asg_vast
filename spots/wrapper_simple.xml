@@ -1,0 +1,16 @@
+<VAST version="3.0">
+    <Ad id="20011">
+        <Wrapper>
+            <AdSystem version="4.0">iabtechlab</AdSystem>
+            <VASTAdTagURI><![CDATA[/spots/simple.xml]]></VASTAdTagURI>
+
+            <Error>http://example.com/error</Error>
+
+            <Impression>http://example.com/track/impression</Impression>
+            <!-- <Creatives>
+                <Creative >
+                </Creative>
+            </Creatives> -->
+        </Wrapper>
+    </Ad>
+</VAST>
